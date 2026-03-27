@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡️ EXPEDIENTE TÁCTICO: CASO DIAN / IFX NETWORKS - Aerotécnico Guzman (FAC)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        // Configuración de Tailwind para nuestro tema personalizado
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cyber-dark': '#0d1117',
+                        'cyber-blue': '#161b22',
+                        'cyber-accent': '#238636', // Verde ciber
+                        'cyber-accent-hover': '#2ea043',
+                        'fac-blue': '#003366', // Azul Fuerza Aérea
+                        'threat-red': '#f85149',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos personalizados para animaciones y fondos */
+        body { font-family: 'Consolas', 'Monaco', 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.9)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .file-card { transition: all 0.3s ease; }
+        .file-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(35, 134, 54, 0.2); }
+        .section-bg {
+            background-image: linear-gradient(rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.9)), url('https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-cyber-dark text-gray-300 antialiased">
+
+    <nav class="bg-cyber-blue border-b border-gray-800 p-4 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-shield-alt text-fac-blue text-3xl"></i>
+                <h1 class="text-2xl font-bold text-white tracking-tighter">MISIÓN: EXPEDIENTE DIAN / IFX</h1>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bg-threat-red text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Clasificado</span>
+                <span class="text-sm font-mono text-fac-blue">Analista: Guzman (FAC)</span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-bg py-24 text-center">
+        <div class="container mx-auto px-6">
+            <i class="fas fa-satellite-dish text-threat-red text-6xl mb-6"></i>
+            <h2 class="text-5xl font-extrabold text-white tracking-tightest mb-4">Autopsia Forense Táctica</h2>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">Disrupción sistémica de la infraestructura crítica colombiana mediante un ataque a la cadena de suministro.</p>
+            <div class="bg-cyber-blue p-8 rounded-xl border-l-4 border-fac-blue inline-block text-left shadow-xl max-w-3xl">
+                <blockquote class="text-lg text-white mb-6">
+                    <i class="fas fa-quote-left text-fac-blue mr-3"></i>"La supremacía de la información no se garantiza firmando contratos con proveedores, sino asumiendo el control táctico de nuestra propia infraestructura."
+                </blockquote>
+                <p class="text-gray-400"><i class="fas fa-calendar-alt text-gray-500 mr-2"></i><strong>Operación:</strong> Disrupción Masiva a IFX Networks</p>
+                <p class="text-gray-400"><i class="fas fa-map-marker-alt text-gray-500 mr-2"></i><strong>Objetivo:</strong> Generación de *Threat Intelligence* para APTs</p>
+                <p class="text-gray-400"><i class="fas fa-skull text-gray-500 mr-2"></i><strong>Vector Principal:</strong> Ransomware a Cadena de Suministro</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h3 class="text-4xl font-bold text-white tracking-tighter mb-3">MÓDULOS DE MISIÓN</h3>
+            <p class="text-lg text-gray-500">Documentación y artefactos forenses de la operación.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="file-card bg-cyber-blue p-8 rounded-xl border border-gray-800 flex flex-col items-center shadow-lg">
+                <i class="far fa-file-word text-fac-blue text-5xl mb-6"></i>
+                <h4 class="text-xl font-semibold text-white mb-2">1OSINT.docx</h4>
+                <p class="text-sm text-gray-500 text-center mb-6">Recolección de huella digital y vectores de exposición del incidente.</p>
+                <div class="mt-auto flex flex-col gap-3 w-full">
+                    <a href="./1OSINT.docx" class="bg-fac-blue text-white text-sm font-semibold px-5 py-2.5 rounded-lg text-center shadow-md w-full" target="_blank">
+                        <i class="fas fa-eye mr-2"></i>Ver Original
+                    </a>
+                </div>
+            </div>
+
+            <div class="file-card bg-cyber-blue p-8 rounded-xl border border-gray-800 flex flex-col items-center shadow-lg">
+                <i class="far fa-file-powerpoint text-threat-red text-5xl mb-6"></i>
+                <h4 class="text-xl font-semibold text-white mb-2">Manual_tallin.pptx</h4>
+                <p class="text-sm text-gray-500 text-center mb-6">Aplicación del derecho internacional a la ciberguerra en el caso de estudio.</p>
+                <div class="mt-auto flex flex-col gap-3 w-full">
+                    <a href="./Manual_tallin.pptx" class="bg-threat-red text-white text-sm font-semibold px-5 py-2.5 rounded-lg text-center shadow-md w-full" target="_blank">
+                        <i class="fas fa-chalkboard-teacher mr-2"></i>Abrir Diapositivas
+                    </a>
+                </div>
+            </div>
+
+            <div class="file-card bg-cyber-blue p-8 rounded-xl border-fac-blue flex flex-col items-center shadow-lg">
+                <i class="far fa-file-powerpoint text-cyber-accent text-5xl mb-6"></i>
+                <h4 class="text-xl font-semibold text-white mb-2">Autopsia_Forense.pptx</h4>
+                <p class="text-sm text-gray-500 text-center mb-6">Análisis forense detallado del incidente sistémico y doctrinal.</p>
+                <div class="mt-auto flex flex-col gap-3 w-full">
+                    <a href="./Autopsia de Defensa Cibernética Táctica.pptx" class="bg-cyber-accent text-white text-sm font-semibold px-5 py-2.5 rounded-lg text-center shadow-md w-full" target="_blank">
+                        <i class="fas fa-microscope mr-2"></i>Ver Análisis Forense
+                    </a>
+                </div>
+            </div>
+
+            <div class="file-card bg-cyber-blue p-8 rounded-xl border border-gray-800 flex flex-col items-center shadow-lg relative overflow-hidden">
+                <img src="./diagrama.jpg" alt="Previsualización Diagrama" class="absolute inset-0 w-full h-full object-cover opacity-20 filter blur-sm">
+                <div class="relative z-10 flex flex-col items-center w-full">
+                    <i class="far fa-image text-white text-5xl mb-6"></i>
+                    <h4 class="text-xl font-semibold text-white mb-2">diagrama.jpg</h4>
+                    <p class="text-sm text-gray-500 text-center mb-6">Topología táctica del ataque, puntos de falla y contención.</p>
+                    <div class="mt-auto flex flex-col gap-3 w-full">
+                        <a href="./diagrama.jpg" class="bg-white text-cyber-dark text-sm font-semibold px-5 py-2.5 rounded-lg text-center shadow-md w-full" target="_blank">
+                            <i class="fas fa-expand mr-2"></i>Previsualizar Imagen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bg py-24">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-cyber-blue p-10 rounded-xl shadow-xl border-l-4 border-cyber-accent">
+                <div class="flex items-center gap-4 mb-8">
+                    <i class="fas fa-sync text-cyber-accent text-4xl"></i>
+                    <h4 class="text-3xl font-bold text-white tracking-tighter">EPISTEMOLOGÍA (CICLO OODA)</h4>
+                </div>
+                <p class="text-lg text-gray-400 mb-10">El adversario operó con asimetría brutal. Estábamos estancados en "Observación", ellos ya "Actuaban".</p>
+                
+                <div class="space-y-6">
+                    <div class="flex gap-4 items-center bg-cyber-dark p-5 rounded-lg border border-gray-800">
+                        <span class="text-fac-blue text-4xl font-extrabold">O</span>
+                        <div>
+                            <h5 class="text-white font-semibold">Observar</h5>
+                            <p class="text-sm text-gray-500">Recolección de IoCs, firmas de ransomware y telemetría colapsada.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center bg-cyber-dark p-5 rounded-lg border border-gray-800">
+                        <span class="text-fac-blue text-4xl font-extrabold">O</span>
+                        <div>
+                            <h5 class="text-white font-semibold">Orientar</h5>
+                            <p class="text-sm text-gray-500">Confirmación del vector: Compromiso de infraestructura del proveedor.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center bg-threat-red p-5 rounded-lg">
+                        <span class="text-white text-4xl font-extrabold">D</span>
+                        <div>
+                            <h5 class="text-white font-semibold">Decidir</h5>
+                            <p class="text-sm text-white opacity-80">Mapeo de TTPs (Movimiento lateral y doble extorsión).</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-center bg-cyber-accent p-5 rounded-lg">
+                        <span class="text-white text-4xl font-extrabold">A</span>
+                        <div>
+                            <h5 class="text-white font-semibold">Actuar</h5>
+                            <p class="text-sm text-white opacity-80">Implementación de **Zero Trust** para la contención.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-cyber-blue p-10 rounded-xl shadow-xl border-l-4 border-threat-red">
+                <div class="flex items-center gap-4 mb-8">
+                    <i class="fas fa-project-diagram text-threat-red text-4xl"></i>
+                    <h4 class="text-3xl font-bold text-white tracking-tighter">MATRIZ MITRE ATT&CK</h4>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-400">
+                        <thead class="text-xs text-gray-500 uppercase bg-cyber-dark">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">Táctica</th>
+                                <th scope="col" class="px-6 py-3">Técnica Ejecutada</th>
+                                <th scope="col" class="px-6 py-3">Mitigación Doctrinaria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-800">
+                                <td class="px-6 py-4 text-fac-blue">Acceso Inicial</td>
+                                <td class="px-6 py-4">Spear-phishing / VMware ESXi</td>
+                                <td class="px-6 py-4">MFA estricto y segmentación</td>
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="px-6 py-4 text-fac-blue">Persistencia</td>
+                                <td class="px-6 py-4">Registry Run Keys / Tareas Programadas</td>
+                                <td class="px-6 py-4">Monitoreo de integridad</td>
+                            </tr>
+                            <tr class="border-b border-gray-800">
+                                <td class="px-6 py-4 text-fac-blue">Evasión</td>
+                                <td class="px-6 py-4">Ejecución *fileless* (WMI)</td>
+                                <td class="px-6 py-4">Threat Hunting proactivo (Blue Team)</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 text-fac-blue">Impacto</td>
+                                <td class="px-6 py-4">Cifrado (Doble Extorsión)</td>
+                                <td class="px-6 py-4">Backups *Offline* / Inmutables</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-6 py-20 text-center">
+        <div class="mb-16">
+            <h3 class="text-4xl font-bold text-white tracking-tighter mb-3">LA LECCIÓN DOCTRINARIA</h3>
+            <p class="text-lg text-gray-500">El factor humano es el vector, pero el analista capacitado es la contramedida.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            <div class="bg-cyber-blue p-8 rounded-xl border border-threat-red">
+                <i class="fas fa-heartbeat text-threat-red text-3xl mb-6"></i>
+                <h4 class="text-xl font-semibold text-white mb-2">Resiliencia Operativa</h4>
+                <p class="text-sm text-gray-500">La DIAN carecía de autonomía para recuperar operaciones sin su proveedor. Falla en el **ADLS (Acuerdo Interno)** vs. un SLA blindado en papel.</p>
+            </div>
+            <div class="bg-cyber-blue p-8 rounded-xl border border-fac-blue">
+                <i class="fas fa-university text-fac-blue text-3xl mb-6"></i>
+                <h4 class="text-xl font-semibold text-white mb-2">Cerco Normativo</h4>
+                <p class="text-sm text-gray-500">Incumplimiento de la Ley 1621 (Seguridad e Inteligencia), los CONPES de resiliencia digital y el **Manual de Tallin 2.0** de cibersoberanía.</p>
+            </div>
+            <div class="bg-cyber-blue p-8 rounded-xl border border-cyber-accent">
+                <i class="fas fa-chess-knight text-cyber-accent text-3xl mb-6"></i>
+                <h4 class="text-xl font-semibold text-white mb-2">Mentalidad Purple Team</h4>
+                <p class="text-sm text-gray-500">Desplegar los "3 Súper Poderes": **Adaptabilidad**, Resiliencia y **Proactividad** para una mejora continua inmutable.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-cyber-blue border-t border-gray-800 p-8 mt-20 text-center">
+        <i class="fas fa-fighter-jet text-fac-blue text-4xl mb-4"></i>
+        <p class="text-white font-semibold">EXPEDIENTE DE INTELIGENCIA CLASIFICADO - MISIÓN DIAN/IFX</p>
+        <p class="text-sm text-gray-500">Desarrollado y Analizado por Aerotécnico Guzman - Fuerza Aeroespacial Colombiana</p>
+    </footer>
+
+</body>
+</html>
